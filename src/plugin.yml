@@ -1,0 +1,17 @@
+
+
+name: CompactCrafting
+main: com.gmail.liamgomez75.compactcrafting.CompactCrafting
+version: 0.0.4
+
+commands:
+    parkourroll:
+        description: configure settings in the plugin!
+        aliases: [cc]
+        usage: See '/<command> help' for correct usages
+permissions:
+    craft.*:
+        description: Gives access to all commands
+        default: false
+        children:
+            craft.WorkBench: true
