@@ -2,7 +2,7 @@
 
 name: CompactCrafting
 main: com.gmail.liamgomez75.compactcrafting.CompactCrafting
-version: 0.0.5
+version: 0.0.6
 
 commands:
     parkourroll:
@@ -14,4 +14,4 @@ permissions:
         description: Gives access to all commands
         default: false
         children:
-            craft.WorkBench: true
+            craft.workbench: true
