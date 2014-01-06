@@ -43,7 +43,7 @@ public class WorkbenchListener implements Listener {
             final Player player = e.getPlayer();
             if( (e.getAction() == (Action.RIGHT_CLICK_AIR))) {
                     if(player.getInventory().getItemInHand().getType() == Material.WORKBENCH && player.hasPermission("craft.WorkBench")) {
-                        Inventory inv = Bukkit.getServer().createInventory(null, InventoryType.CRAFTING);
+                        Inventory inv = Bukkit.getServer().createInventory(null, InventoryType.WORKBENCH);
                         player.openInventory(inv);
                     }
                 }
