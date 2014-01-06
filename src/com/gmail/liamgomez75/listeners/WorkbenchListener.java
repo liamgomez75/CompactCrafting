@@ -12,6 +12,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.inventory.InventoryType;
+import org.bukkit.event.inventory.PrepareItemCraftEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.Inventory;
 
@@ -44,7 +45,8 @@ public class WorkbenchListener implements Listener {
             if( (e.getAction() == (Action.RIGHT_CLICK_AIR))) {
                     if(player.getInventory().getItemInHand().getType() == Material.WORKBENCH && player.hasPermission("craft.WorkBench")) {
                         Inventory inv = Bukkit.getServer().createInventory(null, InventoryType.WORKBENCH);
-                        player.openInventory(inv);
+                        //player.openInventory(inv);
+                        player.openWorkbench(null, true);
                     }
                 }
             }
